@@ -62,12 +62,14 @@ npm run build
 Create a `.env` file:
 
 ```bash
-ISDA_USERNAME=***REMOVED***
-ISDA_PASSWORD=***REMOVED***
+ISDA_USERNAME=your_username@domain.com
+ISDA_PASSWORD=your_password_here
 ISDA_API_BASE_URL=https://api.isda-africa.com  # Optional, defaults to this
 PORT=3002  # Optional, defaults to 3002
 ALLOWED_ORIGINS=https://yourdomain.com  # Optional, defaults to *
 ```
+
+**⚠️ SECURITY:** Never commit credentials to git. Keep them in `.env` file only (already in `.gitignore`).
 
 ### Running Locally
 
@@ -156,9 +158,11 @@ These headers allow the chat widget to pass default coordinates that tools can u
 ### Step 2: Set Environment Variables
 
 In Railway dashboard, add:
-- `ISDA_USERNAME`: `***REMOVED***`
-- `ISDA_PASSWORD`: `***REMOVED***`
+- `ISDA_USERNAME`: Your ISDA Soil API username
+- `ISDA_PASSWORD`: Your ISDA Soil API password
 - `PORT`: (Optional) Server port (defaults to 3002)
+
+**⚠️ SECURITY:** Never commit credentials to git. Set them only in Railway environment variables.
 
 ### Step 3: Deploy
 
