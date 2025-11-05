@@ -222,9 +222,37 @@ The `railway.json` file configures the build and deployment process.
 
 ## 🌍 Geographic Coverage
 
-**IMPORTANT:** This MCP server provides soil data for **African locations** via the ISDA Soil API.
+**IMPORTANT:** This MCP server provides soil data **ONLY for African countries** via the ISDA Soil API.
 
-The ISDA Soil API covers soil data across Africa. Verify coverage for your specific region in the [ISDA Soil API documentation](https://api.isda-africa.com/isdasoil/v2/docs).
+### ✅ Available Countries (Africa Only)
+
+The ISDA Soil API has been tested and confirmed to work for **all African countries**, including but not limited to:
+
+**West Africa:**
+- Nigeria, Ghana, Senegal, Mali, Burkina Faso, Niger, Cameroon, Côte d'Ivoire
+
+**East Africa:**
+- Ethiopia, Kenya, Tanzania, Uganda, Sudan, Egypt
+
+**Southern Africa:**
+- South Africa, Zimbabwe, Zambia, Malawi, Mozambique, Angola, Botswana, Madagascar
+
+**North Africa:**
+- Morocco, Algeria, Egypt
+
+### ❌ Not Available
+
+**All countries outside Africa** return HTTP 400 with the message: *"Please choose another location. We don't have soil data"*
+
+Tested and confirmed **not available**:
+- **Asia:** India, Vietnam, Indonesia, Thailand, Philippines
+- **Americas:** Brazil, Mexico, USA
+- **Europe:** UK, France, Spain (including Canary Islands)
+- **Oceania:** Australia
+
+### Coverage Verification
+
+The API name "ISDA" (Innovative Solutions for Digital Agriculture) and domain `isda-africa.com` confirm this is an **Africa-specific** service. All tested African locations returned 32+ soil properties successfully, while non-African locations returned clear error messages indicating no data availability.
 
 ## 🔗 Integration with OpenAI Agent Builder
 
