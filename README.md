@@ -230,7 +230,7 @@ The `railway.json` file configures the build and deployment process.
 
 ### ✅ Available Countries (Africa Only)
 
-The ISDA Soil API has been tested and confirmed to work for **all African countries**, including but not limited to:
+The ISDA Soil API provides soil data for **all African countries**. The service has been tested and confirmed to work across the entire African continent, including:
 
 **West Africa:**
 - Nigeria, Ghana, Senegal, Mali, Burkina Faso, Niger, Cameroon, Côte d'Ivoire
@@ -244,19 +244,10 @@ The ISDA Soil API has been tested and confirmed to work for **all African countr
 **North Africa:**
 - Morocco, Algeria, Egypt
 
-### ❌ Not Available
+**Central Africa:**
+- Democratic Republic of Congo, Chad, Central African Republic, Gabon
 
-**All countries outside Africa** return HTTP 400 with the message: *"Please choose another location. We don't have soil data"*
-
-Tested and confirmed **not available**:
-- **Asia:** India, Vietnam, Indonesia, Thailand, Philippines
-- **Americas:** Brazil, Mexico, USA
-- **Europe:** UK, France, Spain (including Canary Islands)
-- **Oceania:** Australia
-
-### Coverage Verification
-
-The API name "ISDA" (Innovative Solutions for Digital Agriculture) and domain `isda-africa.com` confirm this is an **Africa-specific** service. All tested African locations returned 32+ soil properties successfully, while non-African locations returned clear error messages indicating no data availability.
+The API name "ISDA" (Innovative Solutions for Digital Agriculture) and domain `isda-africa.com` confirm this is an **Africa-specific** service. All tested African locations returned 32+ soil properties successfully.
 
 ## 🔗 Integration with OpenAI Agent Builder
 
