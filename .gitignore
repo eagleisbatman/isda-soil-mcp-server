@@ -13,3 +13,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
+# Cursor IDE rules (local development file)
+.cursorrules
